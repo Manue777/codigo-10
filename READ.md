@@ -11,7 +11,7 @@ git --version
 *Para configurar el correo
 
 ```bash
-git config --global user.email''lejeune.manu@gmail''
+git config --global user.email''lejeune.manu@gmail.com''
 ```
 
 
