@@ -1,73 +1,82 @@
 :root {
     font-size: 20px;
-}
-
-h1 {
+  }
+  
+  /* Vamos a usar la fuente que acabamos de importar */
+  
+  /* Segun los principios de css las fuentes vienen de la pc (computadora) */
+  /* Si la primera fuente no funciona va a tomar la de respaldo */
+  body {
+    font-family: "Poppins", sans-serif, Helvetica;
+  }
+  
+  h1 {
     color: green;
     background-color: beige;
     padding: 20px;
     text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
     font-size: 3rem;
-}
-#div_temas {
+  }
+  #div_temas {
     display: none;
-}
-
-
-.product_cell {
+  }
+  
+  .product_cell {
     border: 2px solid blue;
     border-radius: 10px;
     padding: 10px;
     margin: 20px;
-}
-
-.product_cell:hover {
+  }
+  
+  .product_cell:hover {
     border: 4px dashed red;
     box-shadow: 0px 0px 10px red;
     cursor: grab;
-}
-
-.product_cell:hover > img {
+  }
+  
+  .product_cell:hover > img {
     opacity: 50%;
     border: 4px solid black;
-}
-
-.laptop > h2 {
+  }
+  
+  .laptop > h2 {
     color: blue;
-}
-.laptop > h2::before {
+    font-family: "Dancing Script", cursive;
+  }
+  .laptop > h2::before {
     content: "💻 ";
-}
-.laptop > h3 {
-    color:cadetblue;
+  }
+  .laptop > h3 {
+    color: cadetblue;
     text-align: right;
     padding-right: 10px;
-}
-
-.celular > h2 {
+  }
+  
+  .celular > h2 {
     color: red;
-}
-.celular > h2::before {
+  }
+  .celular > h2::before {
     content: "📱 ";
-}
-.celular > h3 {
+  }
+  .celular > h3 {
     color: brown;
-}
-
-.audifono > h2 {
+  }
+  
+  .audifono > h2 {
     color: green;
-}
-.audifono > h3 {
+  }
+  .audifono > h3 {
     color: aquamarine;
-}
-
-/* Estilos para el formulario */
-.div_form {
+  }
+  
+  /* Estilos para el formulario */
+  .div_form {
     width: 400px;
     margin: 20px auto;
-}
-
-.div_form > form > input {
+  }
+  
+  .div_form > form > input {
     height: 40px;
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -75,49 +84,50 @@ h1 {
     font-size: 20px;
     padding-left: 20px;
     outline: none;
-}
-
-.div_form > form > input:focus {
+  }
+  
+  .div_form > form > input:focus {
     border: 2px solid blue;
-}
-
-.div_form > form > button {
+  }
+  
+  .div_form > form > button {
     height: 40px;
     border: 1px solid #ccc;
     border-radius: 20px;
     width: 28%;
     outline: none;
-}
-.div_form > form > button:hover {
+  }
+  .div_form > form > button:hover {
     background-color: #666;
     border: none;
     color: #fff;
     cursor: pointer;
-}
-.div_form > form > button:focus {
+  }
+  .div_form > form > button:focus {
     border: 2px solid red;
-}
-
-/* Pseudo-elementos */
-.price::before {
+  }
+  
+  /* Pseudo-elementos */
+  .price::before {
     content: "$ ";
     font-size: 12px;
-}
-.price::after {
+  }
+  .price::after {
     content: ".00";
     font-size: 12px;
-}
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+  }
+  Footer
+  © 2022 GitHub, Inc.
+  Footer navigation
+  Terms
+  Privacy
+  Security
+  Status
+  Docs
+  Contact GitHub
+  Pricing
+  API
+  Training
+  Blog
+  About
+  
