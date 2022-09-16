@@ -19,7 +19,7 @@
     font-size: 3rem;
   }
   #div_temas {
-    display: none;
+    display: block;
   }
   
   .product_cell {
