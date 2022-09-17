@@ -5,11 +5,27 @@
   }
   
   body {
-    background-color: hsl(30, 38%, 92%);
+    /*background-color: hsl(30, 38%, 92%);*/
+    background-color: blue;
   }
   
+  @medi {min-width: none;600px} {
+    body {
+     /*background-color: hsl(30, 38%, 92%);*/
+     background-color: hsl(30, 38%, 92%);
+    }
+  }
+
+  @medi {min-width: none;900px} {
+    body {
+     /*background-color: hsl(30, 38%, 92%);*/
+     background-color: red;
+    }
+  }
+
   .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -17,20 +33,21 @@
   
   .left-image {
     background: url("../images/image-product-desktop.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    background-position: 0%,33%;
+    height: 200px;
     width: 300px;
     background-color: #fff;
     border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
   
   .content {
-    height: 400px;
-    width: 250px;
+    /*height: 400px;*/
+    width: 300px;
     background-color: #fff;
-    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 20px;
   }
