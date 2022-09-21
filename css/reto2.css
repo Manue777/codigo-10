@@ -1,160 +1,190 @@
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  /* Mobile first */
-  body {
-    background-color: hsl(217, 54%, 11%);
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 120vh;
-    background-color: hsl(217, 54%, 11%);
-  }
+:root {
+  font-family: "Outfit", sans-serif;
 
 
-  .minicontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 120vh;
-    background-color: hsl(216, 50%, 16%);
-    height: 740px;
-    width: 425px;
-
-  }
-
-  .center-image {
-    background: url("../images2/image-equilibrium.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0% 33%;
-    height: 350px;
-    width: 375px;
-    background-color: hsl(216, 50%, 16%);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    margin-left: auto;
-    margin-right: auto;
-
-  }
-
-  .content {
-    width: 375px;
-    height: 150px;
-    background-color: hsl(216, 50%, 16%)
-  }
-
-  .title {
-    color: hsl(0, 0%, 100%);
-    font-family: "Fraunces", sans-serif;
-    margin-top: 15px;
-    font-weight: 600;
-
-  }
-
-  .sub-title {
-    font-family: "Montserrat", sans-serif;
-    color: hsl(215, 51%, 70%);
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
+  /* font-size: 18px; */
+}
 
 
-  .valor, .days {
-    display: inline-block;
-    width: 200px;
-  }
-
-  .ethereum {
-    text-align: center;
-  }
-
-  .valor h2 {
-    color: hsl(178, 100%, 50%);
-    font-size: 18px;
-    font-weight: 400;
-  }
-
-  .valor > h2::before {
-    content: "  ";
-  }
-
-  .days h2 {
-    color: hsl(215, 51%, 70%);
-    font-size: 18px;
-    font-weight: 400;
-  }
-
-  .create,
-  .Jules {
-    display: inline-block;
-    width: 200px;
-  }
+body {
+  background-color: hsl(217, 54%, 11%);
 
 
-  .create h2 {
-    color: hsl(215, 51%, 70%);
-    font-size: 18px;
-    font-weight: 300;
-    margin-left: 105px
-  ;
-  }
-
-  .Jules h2 {
-    color: hsl(0, 0%, 100%);
-    font-size: 18px;
-    font-weight: 300;
-  }
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
 
 
-  .only-lg {
-    display: none;
-  }
+/* contenedor principal centrado */
+.container {
+  background-color: hsl(216, 50%, 16%);
+  width: 90%;
+  /* height: 580px; */
+  height: 70%;
+  display: block;
+  border-radius: 15px;
+}
 
 
-  .minicontainer:hover {
+/* div de la imagen */
+.image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+.img {
+  width: 84%;
+  margin-top: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.img2 {
+  position: absolute;
+  visibility: hidden;
+  border-radius: 10px;
+  margin-top: 160px;
+  cursor: pointer;
+}
+
+
+/* al pasar el mouse por la imagen 1 afecta a la imagen2 */
+.img:hover + .img2 {
+  visibility: visible;
+}
+
+
+/* div de los textos */
+.texto {
+  border: 0px solid blueviolet;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px 30px 30px;
+}
+
+
+.texto .title {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 5px;
+  color: hsl(0, 0%, 100%);
+}
+
+
+.title:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+
+.texto .content {
+  font-weight: 300;
+  margin-top: 10px;
+  color: hsl(215, 51%, 70%);
+  line-height: 170%;
+}
+
+
+.pre {
+  display: flex;
+  color: hsl(0, 0%, 100%);
+  justify-content: space-between;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+
+.pre .image-left {
+  color: hsl(178, 100%, 50%);
+  display: inline-flex;
+}
+
+
+.pre .image-left .price {
+  margin-left: 10px;
+}
+
+
+.pre .image-right {
+  color: hsl(215, 51%, 70%);
+  display: inline-flex;
+  /* border: 1px solid yellow;     */
+}
+
+
+.pre .image-right .days {
+  margin-left: 10px;
+}
+
+
+.linea {
+  margin-top: 20px;
+  border: 1px solid;
+  color: hsl(215, 32%, 27%);
+}
+
+
+/* autor */
+.autor {
+  display: flex;
+  margin-top: 20px;
+  color: hsl(215, 51%, 70%);
+  /* border: 1px solid yellow; */
+  height: 40px;
+  align-items: center;
+}
+
+
+.autor img {
+  width: 40px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50px;
+}
+
+
+.autor .name-autor {
+  margin-left: 15px;
+}
+.autor .name-autor span {
+  color: hsl(0, 0%, 100%);
+}
+.autor .name-autor > span:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+
+@media (min-width: 1440px) {
+  .img {
+    width: 35%;
+    margin-top: 30px;
+    border-radius: 10px;
     cursor: pointer;
+}
+
+
+.img:hover + .img2 {
+    visibility: visible;
+    margin-top: 280px;
   }
 
-  /* MD */
-  @media (min-width: 1440px) {
-    body {
-      background-color: hsl(30, 38%, 92%);
-    }
 
-    .container {
-      flex-direction: column;
-    }
-
-    .center-image {
-      background-size: cover;
-      background-position: 50% 0%;
-      height: 400px;
-      width: 200px;
-      background-color: #fff;
-      border-radius: 0px;
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
-    }
-
-    .content {
-      height: 400px;
-      width: 300px;
-      background-color: #fff;
-      border-radius: 0px;
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px;
-      padding: 20px;
-    }
+  body {
+    align-items: flex-start;
   }
+
+
+  .texto {
+    margin: 80px 30px 30px 30px;
+  }
+
+
+  .autor {
+    justify-content: center;
+  }
+}
