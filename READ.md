@@ -1,61 +1,40 @@
-#Primer dia con Git /GitHub
+Primer dia con Git/GitHub
+Comando para configurar el usuario y correo
 
-Lista de comandos de git
+lista de comando Git
 
-*Para poder ver la version de  git
-
-```bash
+Para poder ver la version de Git
 git --version
-```
-
 *Para configurar el correo
 
-```bash
-git config --global user.email''lejeune.manu@gmail.com''
-```
+git config --global user.email "email"
+*Para configurar el username
 
+git config --global user.name "username"
+*Indica el tipo de lenguaje para dar configuracion en este caso js
 
-*para configurar el username
-
-```bash
-git config --global user.name''manue777''
-```
-*sirve para poder empezar a usar el control de version gif en nuestra carpeta
-
-
-*esto solo se usa una vez por carpeta
-
-```bash
+console.log("")
+Sirve para poder empezar a usar en control de versiones (Git) en nuestra carpeta
 git init
-```
-
-* para ver el estado de nuestros cambios
-
-```bash
+Para ver el estado de nuestros cambios
 git status
-```
-
-* agrega los archivos a la memoria de la pc
-
-```bash
-git add
-```
-
-*crear el registro de los
-
-```bash
-git commit -m ''comentario''
-```
-
-
-*poder ver el historial de commits
-
-*para poder ver el ID
-
-
-```bash
+Guarda todos los archivos
+git add .
+Guarda un archivo especifico
+git add READ.md
+Para crear el registro de los cambios realizados en el MAIN
+git commit -m "Creando mi primer commit"
+Muestra el historial de cambios guardados en commit con su ID
 git log
-```
-
+Muestra los cambios especificos utilizando el ID
+git show "ID del commit"
+Conecta en remotamente el proyecto
+git remote add origin https://github.com/Yoel-Aliaga/codigo-10.git
+Para ver a que url esta vinculado nuestro proyecto
+git remote -v
+Cambiar de url
+git remote set-url origin  url
+Sube los archivos a GitHub
+git push origin main
 
 
