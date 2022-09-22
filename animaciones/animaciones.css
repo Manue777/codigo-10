@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* **Animemos al p */
+  p {
+    /* *Parte de una animacion */
+    /* ?tiempo
+     ! 4s = 4 segundos
+     ! 13s = 13 segundos
+     * El tiempo de una animacion
+     * puede ser en segundos(s) o milisegundos(ms)
+     */
+    animation-duration: 4s;
+    /* * Nombre de la animacion */
+    animation-name: primera-animacion;
+  }
+  
+  /** Tenemos que enlazar nuestra animacion 
+  ** con nuestro keyframes y esto se da por el 
+  ** nombre */
+  @keyframes primera-animacion {
+    /** Lo que esta dentro de nuestro keyframes
+    ** se llaman fotogramas */
+  
+    /*!El inicio de la animacion  */
+    from {
+      margin-left: 100%;
+      margin-top: 40%;
+    }
+  
+    /*! Es el final de la animacion */
+    to {
+      color: red;
+      font-size: 100px;
+    }
+  }
