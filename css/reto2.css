@@ -161,14 +161,52 @@ body {
 
 @media (min-width: 1440px) {
   .img {
-    width: 35%;
+    width: 375px;
+    height: 400px;
     margin-top: 30px;
     border-radius: 10px;
     cursor: pointer;
-}
+    background-position: 50% 0%;
+  }
+  .container {
+    background-color: hsl(216, 50%, 16%);
+    width: 450px;
+    height: 750px;
+    display: block;
+    margin-top: 100px;
+    border-radius: 15px;
+    background-position: 50% 0%;
+  }
+
+  .img2 {
+    position: absolute;
+    visibility: hidden;
+    border-radius: 10px;
+    margin-top: 160px;
+    cursor: pointer;
+  }
 
 
-.img:hover + .img2 {
+  .texto .title {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: hsl(0, 0%, 100%);
+  }
+  
+  .texto .content {
+    font-weight: 300;
+    margin-top: 10px;
+    color: hsl(215, 51%, 70%);
+    line-height: 170%;
+  }
+  
+  .title:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+  }
+  
+  .img:hover + .img2 {
     visibility: visible;
     margin-top: 280px;
   }
@@ -178,10 +216,6 @@ body {
     align-items: flex-start;
   }
 
-
-  .texto {
-    margin: 80px 30px 30px 30px;
-  }
 
 
   .autor {
