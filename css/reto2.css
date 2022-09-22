@@ -22,7 +22,7 @@ body {
   background-color: hsl(216, 50%, 16%);
   width: 90%;
   /* height: 580px; */
-  height: 70%;
+  height: 85%;
   display: block;
   border-radius: 15px;
 }
@@ -162,7 +162,7 @@ body {
 @media (min-width: 1440px) {
   .img {
     width: 375px;
-    height: 400px;
+    height: 390px;
     margin-top: 30px;
     border-radius: 10px;
     cursor: pointer;
@@ -171,7 +171,7 @@ body {
   .container {
     background-color: hsl(216, 50%, 16%);
     width: 450px;
-    height: 750px;
+    height: 740px;
     display: block;
     margin-top: 100px;
     border-radius: 15px;
@@ -186,7 +186,7 @@ body {
     cursor: pointer;
   }
 
-
+  
   .texto .title {
     font-size: 22px;
     font-weight: 400;
@@ -199,8 +199,17 @@ body {
     margin-top: 10px;
     color: hsl(215, 51%, 70%);
     line-height: 170%;
+    font-size: 22px;
   }
-  
+
+  .pre {
+    display: flex;
+    color: hsl(0, 0%, 100%);
+    justify-content: space-between;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+
   .title:hover {
     cursor: pointer;
     color: hsl(178, 100%, 50%);
@@ -211,11 +220,9 @@ body {
     margin-top: 280px;
   }
 
-
   body {
     align-items: flex-start;
   }
-
 
 
   .autor {
