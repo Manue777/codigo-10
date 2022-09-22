@@ -16,22 +16,91 @@
   <body>
     <div class="container">
       <!-- Primera seccion titulo - boton -->
-      <div>
-        <h4>devfinder</h4>
-        <button>LIGHT</button>
+      <div class="section-1">
+        <h4 class="title">devfinder</h4>
+        <button class="btn-mode">
+          LIGHT <img width="20" src="./images/sun.png" alt="" />
+        </button>
       </div>
       <!-- Buscador -->
-      <div>
-        <div>
-          <img src="" alt="" />
-          <input type="text" placeholder="Search GitHub username..." />
+      <div class="search-container">
+        <div class="input-container">
+          <img width="15" src="./images/search.png" alt="" />
+          <input
+            class="input-search"
+            type="text"
+            placeholder="Search GitHub username..."
+          />
         </div>
         <div>
-          <button>Search</button>
+          <button class="btn-search">Search</button>
         </div>
       </div>
       <!-- Seccion que muestra la informacion -->
-      <div></div>
+      <div class="information-container">
+        <!-- Imagen de perfil -->
+        <div class="image-container">
+          <img width="100" src="./images/manu.png" alt="" />
+        </div>
+        <!-- Description del perfil -->
+        <div class="description-container">
+          <!-- Nombre de usuario y año de union -->
+          <div class="user-date-container">
+            <h2>The Octocat</h2>
+            <p>Joined 25 Jun 2011</p>
+          </div>
+          <!-- Nombre de usuario y la bio -->
+          <div class="user-bio-container">
+            <p>@octocat</p>
+            <p>This profile has no bio</p>
+          </div>
+          <!-- Card con los repos, followes, following -->
+          <div class="card-information">
+            <div>
+              <h5>Repos</h5>
+              <h2>8</h2>
+            </div>
+            <div>
+              <h5>Followers</h5>
+              <h2>3938</h2>
+            </div>
+            <div>
+              <h5>Following</h5>
+              <h2>9</h2>
+            </div>
+          </div>
+          <!-- Info de ubi, twitter, link, username -->
+          <div class="info-container">
+            <div>
+              <p>
+                <img width="15" src="./images/pin.png" alt="" />&nbsp;San
+                Francisco
+              </p>
+              <p>
+                <img
+                  width="15"
+                  src="./images/link.png"
+                  alt=""
+                />&nbsp;https://github.blog
+              </p>
+            </div>
+            <div>
+              <p>
+                <img width="15" src="./images/twitter.png" alt="" />&nbsp;Not
+                avible
+              </p>
+
+              <p>
+                <img
+                  width="15"
+                  src="./images/hotel.png"
+                  alt=""
+                />&nbsp;@manu777
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
