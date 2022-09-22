@@ -1,37 +1,60 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(211, 15, 15);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 150px;
+  color: rgb(200, 255, 0);
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-shadow: 0px 0px 0 rgb(2, 60, 250), 1px 1px 0 rgb(0, 245, 151),
+    2px 2px 0 rgb(240, 178, 0), 3px 3px 0 rgb(235, 173, 0),
+    4px 4px 0 rgb(230, 168, 0), 5px 5px 0 rgb(225, 163, 0),
+    6px 6px 0 rgb(220, 158, 0), 7px 7px 0 rgb(215, 153, 0),
+    8px 8px 0 rgb(210, 148, 0), 9px 9px 0 rgb(205, 143, 0),
+    10px 10px 0 rgb(0, 200, 10), 11px 11px 10px rgba(0, 0, 0, 0.6),
+    11px 11px 1px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.2);
+  animation-duration: 6s;
+  animation-name: screen-saver;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes screen-saver {
+  from {
+    margin-left: 100%;
   }
-  
-  /* **Animemos al p */
-  p {
-    /* *Parte de una animacion */
-    /* ?tiempo
-     ! 4s = 4 segundos
-     ! 13s = 13 segundos
-     * El tiempo de una animacion
-     * puede ser en segundos(s) o milisegundos(ms)
-     */
-    animation-duration: 4s;
-    /* * Nombre de la animacion */
-    animation-name: primera-animacion;
+
+  to {
+    margin-right: 100%;
   }
-  
-  /** Tenemos que enlazar nuestra animacion 
-  ** con nuestro keyframes y esto se da por el 
-  ** nombre */
-  @keyframes primera-animacion {
-    /** Lo que esta dentro de nuestro keyframes
-    ** se llaman fotogramas */
-  
-    /*!El inicio de la animacion  */
-    from {
-      margin-left: 100%;
-      margin-top: 40%;
-    }
-  
-    /*! Es el final de la animacion */
-    to {
-      color: red;
-      font-size: 100px;
-    }
+
+  /* porcentajes de fotogramas */
+  10% {
+    margin-top: 500px;
   }
+
+  30% {
+    margin-top: -500px;
+  }
+
+  50% {
+    margin-top: 500px;
+  }
+
+  70% {
+    margin-top: -500px;
+  }
+
+  90% {
+    margin-top: 500px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
