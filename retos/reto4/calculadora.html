@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./calculadora.css" />
+  </head>
+  <body>
+    <div>
+      <input
+        type="radio"
+        onchange="getColorTheme(this)"
+        value="blue"
+        name="theme"
+        class="theme"
+      />Blue
+      <input
+        type="radio"
+        onchange="getColorTheme(this)"
+        value="white"
+        name="theme"
+        class="theme"
+      />White
+      <input
+        type="radio"
+        onchange="getColorTheme(this)"
+        value="purple"
+        name="theme"
+        class="theme"
+      />Purple
+    </div>
+  </body>
+  <script>
+    // obtener el valor de los input
+    document.documentElement.className = "theme-blue";
+
+    function getColorTheme(input) {
+      document.documentElement.className = `theme-${input.value}`;
+      console.log(input.value);
+    }
+  </script>
+</html>

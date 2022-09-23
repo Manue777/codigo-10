@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .theme-blue {
+    /* Esto contiene un valor pero en este caso es un color */
+    --color-primary: blue;
+    --text-color: red;
+  }
+  
+  .theme-white {
+    --color-primary: black;
+    --text-color: white;
+  }
+  
+  .theme-purple {
+    --color-primary: purple;
+    --text-color: green;
+  }
+  
+  body {
+    background-color: var(--color-primary);
+    color: var(--text-color);
+  }
