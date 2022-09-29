@@ -1,4 +1,4 @@
-// string, number = tipos
+//string, number= tipos
 
 let n1 = 10; // number
 let n2 = 20; // number
