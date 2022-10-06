@@ -3,8 +3,8 @@ document.getElementById("div_container").innerText = "Hola a todos";
 // Darle estilos al elemento:
 
 function test() {
-	document.getElementById("div_container").classList.add("big");
-}
+	"document.getElementById("div_conta").classList.add("big");
+}"
 
 function remove() {
 	document.getElementById("div_container").classList.remove("big");
