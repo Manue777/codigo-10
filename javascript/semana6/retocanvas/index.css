@@ -42,20 +42,20 @@
    
   }
   
-  .search {
+  .filtrar {
     display: flex;
     justify-content: center;
     margin: 10px;
     padding: 10px;
   }
   
-  .search input {
+  .filtrar input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
   
-  .search button {
+  .filtrar button {
     padding: 10px;
     border: 1px solid rgb(255, 31, 31);
     border-radius: 5px;
