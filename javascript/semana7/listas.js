@@ -34,9 +34,12 @@ const estudiantes = [
         };
     });
 
-    const datosFiltrados = estudiantes.filter (
-        (estudiante) => estudiantes.id >2
-    );
+    console.log(datosMapeados);
+
+    const datosFiltrados = estudiantes.filter ((estudiante) => {estudiante.id >2
+    });
+
+    console.log(datosFiltrados);
 
     let alumnosMayoresA22 = 0;
 
