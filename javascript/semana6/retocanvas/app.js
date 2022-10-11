@@ -23,6 +23,12 @@ function readMovies(listPeliculas = peliculas.Search) {
         <p>
           ${movie.Year}
         </p>
+        <p>
+          ${movie.imdbID}
+        </p>
+        <p>
+          ${movie.Type}
+        </p>
       </div>
     `;
   });
