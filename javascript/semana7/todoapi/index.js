@@ -21,13 +21,13 @@ app.get("/tasks", (req, res) => {
 });
 
 // POST: generalmente se usa para enviarle datos al servidor:
-app.post("/tasks", (req, res) => {
+app.post("/task", (req, res) => {
   const task = req.body;
   tasks.push(task);
   // Le voy a responder al cliente:
   res.status(201).json({
     message: "ok",
-    tasks,
+    task,
   });
 });
 
