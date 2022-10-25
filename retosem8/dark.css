@@ -1,0 +1,54 @@
+/* Dark theme custom styles */
+body {
+    background-color: #141c2f;
+}
+
+.header__title {
+    color: white;
+}
+
+.theme i {
+    color: white;
+}
+
+.theme__switch {
+    color: white;
+}
+
+.search {
+    background-color: #1f2a48;
+    box-shadow: 3px 2px 5px 2px rgba(0, 0, 0, .5);
+}
+
+.form__input {
+    color: lightgray;
+}
+
+.form__icon {
+    color: #0078fe;
+}
+
+.result {
+    background-color: #1f2a48;
+    box-shadow: 3px 2px 5px 2px rgba(0, 0, 0, .5);
+}
+
+.bio {
+    color: lightgray;
+}
+
+.stats {
+    background-color: #141c2f;
+}
+
+.stats > small {
+    color: lightgray;
+}
+
+.link {
+    color: lightgray;
+}
+
+.link i {
+    color: white;
+}
