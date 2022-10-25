@@ -109,10 +109,10 @@ function showUserData(data) {
 function switchTheme() {
     dark = !dark
     if (dark) {
-        themeCSS.setAttribute("href", "css/light.css")
+        themeCSS.setAttribute("href", "./light.css")
         themeName.textContent = "LIGHT"
     } else {
-        themeCSS.setAttribute("href", "css/dark.css")
+        themeCSS.setAttribute("href", "./dark.css")
         themeName.textContent = "DARK"
     }
 }

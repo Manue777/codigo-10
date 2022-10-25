@@ -25,7 +25,7 @@ body {
 }
 
 .form__input {
-    color: #474747; 
+    color: #0cb38e; 
 }
 
 .form__icon {
@@ -33,7 +33,7 @@ body {
 }
 
 .result {
-    background-color: white;
+    background-color: #474747;
     box-shadow: 3px 2px 5px 2px lightgray;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .stats {
-    background-color: #e9e8fc;
+    background-color: #141c2f;
 }
 
 .stats > * {
