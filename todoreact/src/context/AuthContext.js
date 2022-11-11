@@ -20,6 +20,7 @@ export const AuthProvider = (props) => {
     const user = { email, password };
     localStorage.setItem("user", JSON.stringify(user));
     setUser(user);
+    return true;
   }
 
   function logout() {
@@ -36,7 +37,7 @@ export const AuthProvider = (props) => {
   return (
     <AuthContext.Provider
       value={{
-        user,   
+        user,
         login,
         logout,
         isAuth,
