@@ -1,4 +1,5 @@
 const url = "https://63659f46046eddf1baf09724.mockapi.io/tasks";
+const urlUsers = "https://63659f46046eddf1baf09724.mockapi.io/users";
 
 // GET : Listar
 // POST: Crear
@@ -49,6 +50,32 @@ export const post = async (body) => {
 			},
 			body: JSON.stringify(body),
 		});
+		const data = await response.json();
+		return data;
+	} catch (error) {
+		console.log(error);
+	}
+};
+
+export const postUser = async (user) => {
+	try {
+		const response = await fetch(urlUsers, {
+			method: "POST",
+			headers: {
+				"Content-type": "application/json",
+			},
+			body: JSON.stringify(user),
+		});
+		const data = await response.json();
+		return data;
+	} catch (error) {
+		console.log(error);
+	}
+};
+
+export const getUsers = async () => {
+	try {
+		const response = await fetch(urlUsers);
 		const data = await response.json();
 		return data;
 	} catch (error) {
