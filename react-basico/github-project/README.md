@@ -147,7 +147,7 @@ Es una libreria que nos permite mostrar alertas en nuestra aplicacion
 ### Instalacion
 
 ```bash
-npm install sweetalert
+npm install sweetalert2
 ```
 
 ### Como se usa
